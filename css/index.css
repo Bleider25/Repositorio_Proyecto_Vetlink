@@ -1,0 +1,416 @@
+*{
+    box-sizing: border-box;
+    font-family:Questrial;
+}
+h1 {
+  font-size: 3.5em;
+  position: absolute;
+  top: 30%;
+  width: 91%;
+  text-align: center;
+  color: white;
+  left: 5%;
+}
+
+body{
+    background: linear-gradient(to bottom,#000000, #00111d 45%,#002641 ,#4299c2);
+    margin: 0;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.btn {
+    margin-top: 320px;/*Cambio para mantener alejado del slider*/
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    background: linear-gradient(to right, #9340FF, #0CC0DF);
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1920px;
+    margin: auto;
+    height: 60px;
+}
+
+header {
+    background: none;
+}
+
+header .logo{
+    color: white;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight:bold;
+    font-size: 30px;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header a{
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+header a:hover{
+    color: #9340FF;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+}
+/*aqui empieza el CSS del Slider*/
+img{
+  max-width: 100%;
+}
+.slider-container{
+    position: absolute;
+    bottom: 29%;
+    left: 50%;
+    right: 10%;
+    z-index: -1;
+    max-width: 800px;
+    max-height: 500px;
+    width: 100%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    margin-bottom: 100px;/*Cambio para mantener alejado del btn*/
+}
+.slide {
+  display: flex;
+  transform: translate3d(0,0,0);
+  transition: all 600ms;
+  animation-name: autoplay;
+  animation-duration: 55s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+.item-slide{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  max-width: 100%;
+  overflow: hidden;
+  animation-delay: 0s;
+}
+.item-slide:nth-child(2) {
+  animation-delay: calc(5s * 1);
+}
+.item-slide:nth-child(3) {
+  animation-delay: calc(5s * 2);
+}
+.item-slide:nth-child(4) {
+  animation-delay: calc(5s * 3);
+}
+.item-slide:nth-child(5) {
+  animation-delay: calc(5s * 4);
+}
+.item-slide img {
+  width: 1000px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.5);
+}
+@keyframes autoplay {
+  0% {
+    transform: translate3d(calc(-100%*0), 0, 0);
+  }
+  9.09% {
+    transform: translate3d(calc(-100%*0), 0, 0);
+  }
+  18.18% {
+    transform: translate3d(calc(-100%*1), 0, 0);
+  }
+  27.27% {
+    transform: translate3d(calc(-100%*2), 0, 0);
+  }
+  36.36% {
+    transform: translate3d(calc(-100%*3), 0, 0);
+  }
+  45.45% {
+    transform: translate3d(calc(-100%*4), 0, 0);
+  }
+  54.54% {
+    transform: translate3d(calc(-100%*5), 0, 0);
+  }
+  63.63% {
+    transform: translate3d(calc(-100%*6), 0, 0);
+  }
+  72.72% {
+    transform: translate3d(calc(-100%*7), 0, 0);
+  }
+  81.81% {
+    transform: translate3d(calc(-100%*8), 0, 0);
+  }
+  90.9% {
+    transform: translate3d(calc(-100%*9), 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(-100%*10), 0, 0);
+  }
+}
+/*aqui empieza el CSS del wave animation */
+section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/ola.png);
+    background-size: 1000px 100px;
+  }
+
+  section .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom:0;
+  }
+
+  section .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom:10px;
+  }
+
+  section .wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+
+  section .wave.wave4{
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+
+  @keyframes animate{
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 1000px;
+    }
+  }
+
+  @keyframes animate2{
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: -1000px;
+    }
+  }
+
+/*-----------aqui empieza el responsive -----------------*/
+
+  @media (max-width: 720px) {
+    .slider-container{
+      bottom: 37%;
+    }
+    h1{
+      font-size: 5.5em;
+      top: 20%;
+    }
+    .btn{
+      margin-top: 55%;
+      padding: 20px 70px;
+      font-size: 3.2em;
+    }
+    .logo img{
+      width: 100px;
+      height: 100px;
+    }
+    header .logo{
+      font-size: 60px;
+    }
+    header a{
+      font-size: 25px;
+    }
+  }
+
+  @media (min-width: 721px) {
+    header .container {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    header p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header nav {
+      flex-direction: row;
+      padding-right: 10px;
+    }
+    header a{
+      font-size: 1.2rem;
+    }
+    h1 {
+      font-size: 4em;
+      position: absolute;
+      width: 26%;
+      text-align: initial;
+      color: white;
+      left: 5%;
+      top: 20%;
+    }
+    .conectados{
+      color: #9340FF;
+    }
+    .btn {
+      position: absolute;
+      top: 25%;
+      left: 12%;
+      height: 50px;
+      transition: transform 0.2s ease-out;
+    }
+    .btn:hover {
+      transform: translateY(-5px);
+    }
+    
+    /*-------Slider-------*/
+    .slider-container {
+      position: absolute;
+      width: 900px;
+      height: 500px;
+      max-width: 55%;
+      max-height: 55%;
+      left: 70%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: -25px 20px 100px rgba(38, 14, 105, 0.25), -25px 20px 100px rgba(31, 65, 105, 0.25);
+      border-radius: 10px;
+    }
+    .slider-container .item-slide img {
+      filter: none;
+      height: 500px;
+    }
+  }  
+
+  @media(min-width: 1440px){
+    .btn{
+      top: 25%;
+      left: 12%;
+    }
+    h1{
+      font-size: 3.5em;
+      left: 1%;
+      top: 30%;
+      width: 40%;
+    }
+  }
+
+  @media (min-width: 1441px){
+    h1{
+      width: 42%;
+      top: 33%;
+      left: 2%;
+      font-size: 4.8em;
+      
+    }
+    .btn{
+      top: 40%;
+      left: 18%;
+    }
+    .slider-container{
+      left: 75%;
+    }
+  }
+
+  @media (max-width: 480px){
+    h1{
+        font-size: 3em;
+        position: fixed;
+        top: 21.5%;
+        width: 91%;
+        text-align: center;
+        color: white;
+        left: 5%;
+    }
+    .btn{
+      margin-top: 65%;
+      display: flex;
+      justify-content: center;
+      font-size: 1.6em;
+      font-weight: bold;
+      padding: 10px 35px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      color: white;
+      background: linear-gradient(to right, #9340FF, #0CC0DF);
+      cursor: pointer;
+    }
+    header .logo {
+      color: white;
+      margin: 0;
+      padding: 25px 30px;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    .slider-container {
+      position: absolute;
+      bottom: 26%;
+      left: 50%;
+      right: 10%;
+      z-index: -1;
+      max-width: 800px;
+      max-height: 500px;
+      width: 100%;
+      overflow: hidden;
+      transform: translateX(-50%);
+      margin-bottom: 100px;
+    }
+  }

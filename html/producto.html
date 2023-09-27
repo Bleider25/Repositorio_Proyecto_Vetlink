@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VetLink</title>
+        <link rel="icon" href="img/icons/Logo1.png">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="../css/producto.css" rel="stylesheet">
+        <link rel="icon" href="../img/icons/Logo1.png" type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-nav navbar-outline-none">
+                <div class="container-fluid">
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon top-bar"></span>
+                        <span class="toggler-icon middle-bar"></span>
+                        <span class="toggler-icon bottom-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="Inicio.php"><img src="../img/icons/Logo2.png" alt="" width="30" height="30" class="d-inline-block align-text-center">Vetlink</a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#categorias">Categorias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../php/login.php">Iniciar Sesion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <img src="../img/producto/1.png" alt="">
+            </div>
+            <div class="container-info-producto">
+                <div class="container-price">
+                    <span>$0000</span>
+
+                </div>
+                <div class="prdouct-name">
+                    <h1>Producto 1</h1>
+                </div>
+
+                <div class="container-add-cart">
+                    <div class="container-quantity">
+                        <input type="number" placeholder="1" value="1" min="1" class="input-quantity"/>
+                        <div class="btn-increment-decrement">
+                            <i class="fa-solid fa-chevron-up" id="increment"></i>
+                            <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                        </div>
+                    </div>
+                    <button class="add-to-cart"><img src="../img/icons/add-to-cart.png">Añadir al carrito</button>
+                </div>
+                    <div class="container-description">
+                        <div class="title-description">
+                            <h4>Descripción</h4>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </div>
+                        <div class="text-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloremque assumenda sequi quasi minus cupiditate at explicabo, harum tenetur beatae nihil in veniam, sit quis. Dignissimos maxime neque tenetur a.
+                        </div>
+                    </div>
+                    <div class="container-aditional-information">
+                        <div class="title-aditional-information">
+                            <h4>Detalles</h4>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                        </div>
+                        <div class="text-aditional-information hidden">
+                            <p>---------------</p>
+                        </div>
+                    </div>
+            </div>
+        </main>
+
+        <section class="container-related-products mb-3">
+            <h2>Productos Relacionados</h2>
+            <div class="card-list-products">
+                <div class="card">
+                    <a href="producto.html"><div class="card-img"><img src="../img/producto/1.png" alt="producto 1"></div></a>
+                    <div class="info-card">
+                        <div class="text-product">
+                            <h3>Producto 2</h3>
+                        </div>
+                        <div class="price">$0000</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="producto.html"><div class="card-img"><img src="../img/producto/3.png" alt="producto 2"></div></a>
+                    <div class="info-card">
+                        <div class="text-product">
+                            <h3>Producto 3</h3>
+                        </div>
+                        <div class="price">$0000</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="producto.html"><div class="card-img"><img src="../img/producto/4.png" alt="producto 3"></div></a>
+                    <div class="info-card">
+                        <div class="text-product">
+                            <h3>Producto 4</h3>
+                        </div>
+                        <div class="price">$0000</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="producto.html"><div class="card-img"><img src="../img/producto/5.png" alt="producto 4"></div></a>
+                    <div class="info-card">
+                        <div class="text-product">
+                            <h3>Producto 5</h3>
+                        </div>
+                        <div class="price">$0000</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark text-light pt-5 pb-4">
+            <div class="cotainer text-center text-md-start">
+              <div class="row no-gutters text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="footer-h5 text-uppercase mb-4 font-weight-bold ">Nosotros</h5>
+                  <hr class="mb-4">
+                  <p>
+                    Nuestra tienda es un lugar donde los amantes de las mascotas pueden encontrar todo lo que necesitan para el
+                    cuidado y la felicidad de sus compañeros peludos. Desde perros y gatos y, pronto, hasta aves exóticas y
+                    pequeños roedores, estamos aquí para ser tu destino de confianza.
+                  </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold">contacto</h5>
+                  <hr class="mb-4">
+                  <p>
+                    <li class="fas fa-home me-3"></li>Medellin, Antioquia
+                  </p>
+                  <p>
+                    <li class="fas fa-envelope me-3"></li>Vetlink@gmail.com
+                  </p>
+                  <p>
+                    <li class="fas fa-phone me-3"></li>+57 300 000 0000
+                  </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold">Documentos</h5>
+                  <hr class="mb-4">
+                  <p>
+                    <a href="https://drive.google.com/file/d/1xTiYhTJNChcTCdDMfoovM_F6SStxKVeN/view?usp=sharing" class="text-light"><img src="../img/icons/manual.png" alt="">Manual de usario</a>
+                  </p>
+                  <p>
+                    <a href="https://drive.google.com/file/d/1DVMNe_t5RxfUjPSLiZRzJ9_O5cYU2_GO/view?usp=drive_link" class="text-light"><img src="../img/icons/manual.png" alt="">Terminos y condiciones</a>
+                  </p>
+                  <p>
+        
+                  </p>
+                  <p>
+        
+                  </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <img class="animation-pet" src="../img/icons/dog.png" >
+                </div>
+        
+        
+                <hr class="mb-4">
+                <div class="text-center mb-2">
+                  <p>
+                    <i class="fa-regular fa-copyright" style="color: #ffffff;"></i> Todos los derechos reservados
+                  </p>
+                </div>
+                <div class="text-center">
+                  <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                      <a href="#" class="text-light">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="text-light">
+                        <i class="fab fa-x-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="text-light">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="text-light">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+        
+              </div>
+            </div>
+            </footer>
+            </body>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>AOS.init();</script>
+        <script src="https://kit.fontawesome.com/5567fc9696.js" crossorigin="anonymous"></script>
+        <script src="../js/producto.js"></script>
+</body>
+</html>

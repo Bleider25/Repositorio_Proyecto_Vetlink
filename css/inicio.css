@@ -1,0 +1,176 @@
+*{
+    font-family: Questrial;
+}
+.bg-nav{
+    background: linear-gradient(to right, #9340FF, #0CC0DF);
+}
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+.navbar{
+    border: none;
+}
+.carousel-space {
+    margin-bottom: 20px;
+}
+.row.g-4 {
+    margin-bottom: 20px;
+}
+/*SLIDER===================*/
+.carousel-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.carousel-control-prev, .carousel-control-next {
+    background-color: #C8C8C8; 
+    color: white; 
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+    font-size: 20px; 
+    
+    /* Centra verticalmente los botones utilizando position y transform */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
+  }
+  
+  /* Aumenta el espacio entre los botones y los extremos de la página */
+  .carousel-control-prev {
+    margin-left: 5%; 
+  }
+  
+  .carousel-control-next {
+    margin-right: 5%; 
+  }
+  
+  /* Efecto hover para los botones */
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: #9340FF; 
+    box-shadow: 0px 8px 12px rgba(88, 25, 170, 0.6); 
+    transform: translateY(-55%); 
+  }
+  
+  
+/*BOTON CATEGORIAS==========*/
+.Tcate {
+    text-align: left;
+    margin-left: 5%;
+}
+.square-btn{
+    font-size: 18px;
+    padding: 66px 57px ;
+    border-radius: 5px;
+}
+.btn-color{
+    background:#C8C8C8;
+}
+.btn:hover{
+    background:#a6a6a6;
+}
+.btn {
+    color: white !important;
+}
+.btn-custom-width {
+    width: 100%; /* Ajusta el ancho a 100% en pantallas pequeñas */
+    max-width: 355px; /* Establece el ancho máximo en pantallas grandes */
+}
+/* Estilos para el carrusel para movil */
+@media (max-width: 767px) {
+.carousel-item img {
+    max-height: 300px;
+        }
+}
+
+  /* Estilos para el carrusel para pc */
+@media (min-width: 768px) {
+.carousel-item img {
+    max-height: 500px; 
+        }
+}
+/*----Animacion Boton Navbar---*/
+.navbar-toggler{
+    border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-brand:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+    border-radius: 15px;
+}
+
+.middle-bar{
+    margin: 5px auto;
+}
+
+.navbar-toggler .top-bar{
+    transform: rotate(45deg);
+    transform-origin: 15% 15%;
+}
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar{
+    transform: rotate(-45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler.collapsed .top-bar{
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar{
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon{
+    background-color: white;
+}
+
+
+/*---Animacion zoom in productos---*/
+.card-img-top {
+  transition: transform .2s; 
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/*FOOTER=======================*/
+main {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+  }
+a{
+    text-decoration: none;
+    font-size: 17px;
+}
+a :hover{
+    color: #9340FF !important;
+}
+p{
+    font-size: 17px;
+}
+.row{
+    margin-right: auto;
+}

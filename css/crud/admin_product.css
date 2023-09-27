@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: questrial;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+.bg-nav{
+    background: linear-gradient(to right, #9340FF, #0CC0DF);
+}
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+.navbar{
+    border: none;
+}
+
+/*----Animacion Boton Navbar---*/
+.navbar-toggler{
+    border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-brand:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+    border-radius: 15px;
+}
+
+.middle-bar{
+    margin: 5px auto;
+}
+
+.navbar-toggler .top-bar{
+    transform: rotate(45deg);
+    transform-origin: 15% 15%;
+}
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar{
+    transform: rotate(-45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler.collapsed .top-bar{
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar{
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.btn {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 10px;
+    background:#c7c7c7;
+    cursor: pointer;
+    border: none !important;
+
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+
+.btn:hover{
+    background-color: #9340FF; 
+    box-shadow: 0px 8px 12px rgba(88, 25, 170, 0.349); 
+    transform: translateY(-10%); 
+}

@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de productos</title>
+</head>
+<body>
+ <div>
+ <form action="registrar_productos.php" method="post" enctype="multipart/form-data">
+ <input name="nombre_p" placeholder="nombre del producto" required ></input>
+ <input name="descripcion_p" placeholder="descripcion del producto" required ></input>
+ <input name="precio_p" placeholder="precio del producto" required ></input>
+ <input  type="file"   name="imagen_p" placeholder="imagen del producto" required ></input>
+ <button type="submit">Enviar</button>
+ </form>
+ 
+ </div>
+</body>
+</html>

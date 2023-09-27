@@ -1,0 +1,140 @@
+*{
+    font-family: questrial;
+}
+/* PARA CENTRARLO */
+
+ /* FORMA DEL CUADRO, POR EJEMPLO LA SOMBRA, su tamaño ect.*/
+form {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 50px 35px;
+    border-radius: 5px;
+
+}
+
+/* EL titulo h2 */
+form h2 {
+    font-size: 35px;
+    color: #0D0D0D;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* EL PARRAFO */
+form p {
+    font-size: 16px;
+    color: #5E5E5E;
+    margin-bottom: 35px;
+}
+
+/*ESTILOS PARA LAS CASILLAS, TIPO DISTANCIA */
+.input-wrapper {
+    position: relative;
+    width: 305px;
+    margin-bottom: 15px;
+}
+
+/*ESTILOS PARA LAS CASILLAS, TIPO BORDES */
+input{
+    color: #0D0D0D;
+    padding: 20px 15px 20px 60px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-size: 16px;
+    border: none !important;
+}
+
+/*PARA LA PARTE INTERIOR DE LAS CASILLAS, PLACEHOLDER*/
+input::placeholder{
+    font-size: 16px;
+    color: #BBBBE2;
+}
+
+/*PARA LOS ICONOS DE CADA CASILLA*/
+input-icon{
+    position:absolute;
+    height: 30px;
+    width: 30px;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-55%);
+}
+
+/*PARA EL BOTON DE SUBMIT(TERMINAR)*/
+.btn{
+    align-items: left;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #9340FF, #0CC0DF);
+    cursor: pointer;
+    border: none !important;
+    top: 50%;
+    
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
+}
+
+/*Para CAMBIAR EL COLOR CADA QUE PASE EL CURSOR SOBRE SUBMIT*/
+.btn:hover{
+    background-color: #9340FF; 
+    box-shadow: 0px 8px 12px rgba(88, 25, 170, 0.349); 
+    transform: translateY(-10%); 
+}
+
+/*MENSAJE DE QUE SALIO CORRECTAMENTE*/
+.succes{
+    position: absolute;
+    top: 50px;
+    color: #00C83C;
+    font-size: 18px;
+}
+
+/*MENSAJE DE QUE FALLO*/
+.error{
+    position: absolute;
+    top: 50px;
+    color: #e02d00;
+    font-size: 18px;
+}
+
+/*PARA LA PARTE RESPONSIVE*/
+@media(max-width:991px){
+    body{
+        padding:10px;
+    }
+
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .input-wrapper {
+        position:relative;
+        width: 88%;
+        margin-bottom: 35px;
+    }
+
+    input {
+        padding: 20px 0px 20px 45px;
+    }
+
+    .input-icon {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.text-center{
+    margin-bottom: 20px;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
